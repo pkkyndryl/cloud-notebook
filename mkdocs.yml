@@ -136,14 +136,14 @@ nav:
       - Microservice Integration: patterns/microservice-integration.md
 # Project information
 site_name: Cloud Notebook
-site_url: https://gzeien.github.io/cloud-notebook/
+site_url: https://pkkyndryl.github.io/cloud-notebook/
 site_author: Gary Zeien
 site_description: >-
   A notebook containing information on how Cloud Providers work.
 
 # Repository
 repo_name: Gzeien/cloud-notebook
-repo_url: https://gzeien.github.io/cloud-notebook
+repo_url: https://pkkyndryl.github.io/cloud-notebook
 edit_uri: ""
 
 # Copyright
