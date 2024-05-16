@@ -233,10 +233,10 @@
           - Overall Subject Area: cloud-google-cloud/network-services.md
           - Connectivity:  cloud-google-cloud/connectivity.md
       - Compute Engine:  cloud-google-cloud/compute-engine.md
-  - MS Azure:
-      - Purpose: cloud-microsoft-cloud/Purpose.md
-      - Fundamentals: cloud-microsoft-cloud/fundamentals.md
-      - Resource Overview: cloud-microsoft-cloud/resource-overview.md
+  * MS Azure
+      * [Purpose](cloud-microsoft-cloud/Purpose.md)
+      * [Fundamentals](cloud-microsoft-cloud/fundamentals.md)
+      * [Resource Overview](cloud-microsoft-cloud/resource-overview.md)
   - IBM Cloud:
       - Purpose: cloud-ibm-cloud/Purpose.md
       - Regions and Accounts: cloud-ibm-cloud/understanding-regions-accounts.md
