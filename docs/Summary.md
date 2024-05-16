@@ -19,7 +19,7 @@
 # IN THE SOFTWARE.
 # Page tree
 nav:
-#  - Basics: basics/Purpose.md
+#  - Bassics: basics/Purpose.md
   - About: about/who-am-i.md
   - Looking across clouds: basics/cloud-provider-service-summary.md
   - Cross Cloud Notes:
