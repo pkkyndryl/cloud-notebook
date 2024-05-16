@@ -1,133 +1,105 @@
 # Table of contents
 
 * [Home](README.md)
-
 * [About](about/who-am-i.md)
 * [Looking across clouds](basics/cloud-provider-service-summary.md)
-* Cross Cloud Notes
+* [Cross Cloud Notes](cross-cloud-notes/README.md)
   * [Purpose](common-notes/purpose.md)
   * [Security Control Model](common-security/threat-models.md)
-  * Understanding Kafka:  common-notes/kafka.md
-  * Understanding K8S request & limits: common-notes/understanding-k8s-requests-limits.md
-  * Crossplane IAC: common-notes/crossplane-IaC.md
-  * Logging in K8S: common-notes/kubernetes-logging.md
-  * Operators: common-notes/operators.md
-  * K8S how it works: common-notes/how-k8s-works.md
-  * Understanding VPNs: common-notes/understanding-VPNs.md
-  * Understanding Akamai: common-notes/understanding-dns-akamai.md
+  * [Understanding Kafka: common-notes/kafka.md](cross-cloud-notes/understanding-kafka-common-notes-kafka.md.md)
+  * [Understanding K8S request & limits: common-notes/understanding-k8s-requests-limits.md](cross-cloud-notes/understanding-k8s-request-and-limits-common-notes-understanding-k8s-requests-limits.md.md)
+  * [Crossplane IAC: common-notes/crossplane-IaC.md](cross-cloud-notes/crossplane-iac-common-notes-crossplane-iac.md.md)
+  * [Logging in K8S: common-notes/kubernetes-logging.md](cross-cloud-notes/logging-in-k8s-common-notes-kubernetes-logging.md.md)
+  * [Operators: common-notes/operators.md](cross-cloud-notes/operators-common-notes-operators.md.md)
+  * [K8S how it works: common-notes/how-k8s-works.md](cross-cloud-notes/k8s-how-it-works-common-notes-how-k8s-works.md.md)
+  * [Understanding VPNs: common-notes/understanding-VPNs.md](cross-cloud-notes/understanding-vpns-common-notes-understanding-vpns.md.md)
+  * [Understanding Akamai: common-notes/understanding-dns-akamai.md](cross-cloud-notes/understanding-akamai-common-notes-understanding-dns-akamai.md.md)
   * [A perspective on Analytics](common-notes/view-of-analytics.md)
-  * Understanding ELK: common-notes/understanding-elk.md
-  * Understanding Docker and K8S: common-notes/understanding-docker-k8s.md
-  * MicroServices: microservice-blog/about.md
-  * Digital Exhaust & Compliance: common-notes/digital-exhaust-compliance.md
-  * What is DAPR?: common-notes/dapr.md
-  * REST vs GRPC: common-notes/rest-grpc.md
-* Microservices:
-  * About:  microservice-blog/about.md
-  * Microservices "On Hold": microservice-blog/onhold.md
-  * Microservice SKUs: microservice-blog/sku.md
-  * Event and Stateflows:  microservice-blog/events-stateflows.md
-  * Service Brokers: microservice-blog/service-brokers.md
-  * Microservice Vending Machine:  microservice-blog/vending-machine.md
-  * Con-Ed?: microservice-blog/con-ed.md
-  * Utility Infrastructures?: microservice-blog/utility-infrastructure.md
-  * The "butler" microservice: microservice-blog/alfred.md
-  * Continuous Delivery: microservice-blog/continuous.md
-  * A Point of view:  microservice-blog/what-how.md
-      - Shiny Objects:  microservice-blog/shiney-object.md
-      - Its all about events:  microservice-blog/events.md
-      - Distribution of Microservices: microservice-blog/distribution.md
-      - Ramping up - Scaling Microservices: microservice-blog/rampingup.md
-      - All about the Data: microservice-blog/data.md
-      - Legos?:  microservice-blog/legos.md
-      - Containers: microservice-blog/containers.md
-      - Origins: microservice-blog/origins.md
-      - Seven Things: microservice-blog/seventhings.md
-      - Fundamentals: microservice-blog/fundamentals.md
-      - Forte':  microservice-blog/forte.md
-  - IT Architecture:
-      - Purpose: architecture/purpose.md
-      - 4 Key Things: architecture/four-things.md
-      - Getting Your Message Across: architecture/communicating-message.md
-  - AWS:
-      - Purpose: cloud-aws-cloud/Purpose.md
-      - Organizations and Accounts: cloud-aws-cloud/understanding-regions-accounts.md
-      - Regional Services View: cloud-aws-cloud/understanding-regions-services.md
-      - Operations Management: cloud-aws-cloud/ops-mgmt.md
-      - Security:
-          - IAM: cloud-aws-cloud/security-iam.md
-          - Assume Role: cloud-aws-cloud/assume-role.md
-          - Controls and Auditing: cloud-aws-cloud/security-services.md
-          - Key Management: cloud-aws-cloud/key-management-services.md
-#          - Params and Secrets:  cloud-aws-cloud/params-secrets.md
-      - Compute and Storage:
-          - EC2 & AutoScaling: cloud-aws-cloud/ec2.md
-          - Spot Instances: cloud-aws-cloud/ec2-spot.md
-          - Placement Groups: cloud-aws-cloud/ec2-placement.md
-          - EBS and EFS: cloud-aws-cloud/storage-ebs-efs.md
-          - Storage Gateway: cloud-aws-cloud/storage-gateway.md
-          - S3:  cloud-aws-cloud/s3.md
-          - Containers & K8S: cloud-aws-cloud/containers.md
-      - Networking:
-          - VPC Overview: cloud-aws-cloud/network-services.md
-          - VPC Connectivity: cloud-aws-cloud/connectivity-services.md
-          - DNS, ENI, etc...: cloud-aws-cloud/connectivity-etc.md
-          - CloudFront & Global Accelerator: cloud-aws-cloud/network-cloudfront.md
-      - Data and Analytics:
-          - Integration via Qs & Streams:  cloud-aws-cloud/integation.md
-          - Databases: cloud-aws-cloud/databases.md
-          - Caching: cloud-aws-cloud/elasticache.md
-          - Data Replication, Backup, Sync: cloud-aws-cloud/data-replication.md
-          - Data Integration: cloud-aws-cloud/data-integration.md
-          - Data-Lakes: cloud-aws-cloud/data-lakes.md
-      - Other:
-          - Events: cloud-aws-cloud/event-bridge.md
-          - Serverless: cloud-aws-cloud/serverless.md
-          - CloudWatch: cloud-aws-cloud/cloudwatch.md
-  - Google Cloud:
-      - Purpose: cloud-google-cloud/Purpose.md
-      - Basics:
-          - Fundamentals of GCP: cloud-google-cloud/fundamentals.md
-          - Google Architecture Framework: cloud-google-cloud/arch-framework.md
-      - Org, Projects, and IAM:
-          - Basics: cloud-google-cloud/understanding-regions-accounts.md
-          - IAM: cloud-google-cloud/iam.md
-          - Service and Host Projects: cloud-google-cloud/project-details.md
-      - Data & Analytics:
-          - Big Query: cloud-google-cloud/gcp-big-query.md
-          - Data Lakes: cloud-google-cloud/gcp-big-data.md
-      - Containers and K8S:
-          - GKE: cloud-google-cloud/kubernetes-engine.md
-      - Networking:
-          - Overall Subject Area: cloud-google-cloud/network-services.md
-          - Connectivity:  cloud-google-cloud/connectivity.md
-      - Compute Engine:  cloud-google-cloud/compute-engine.md
-  * MS Azure
-      * [Purpose](cloud-microsoft-cloud/Purpose.md)
-      * [Fundamentals](cloud-microsoft-cloud/fundamentals.md)
-      * [Resource Overview](cloud-microsoft-cloud/resource-overview.md)
-  - IBM Cloud:
-      - Purpose: cloud-ibm-cloud/Purpose.md
-      - Regions and Accounts: cloud-ibm-cloud/understanding-regions-accounts.md
-      - Networking: cloud-ibm-cloud/network-services.md
-      - Security: cloud-ibm-cloud/security-services.md
-      - Key Management: cloud-ibm-cloud/key-management-services.md
-
-  * Patterns:
-      * [Event Driven Solutions](patterns/event-driven-1.md)
-      * [MicroServices Integration](patterns/microservice-integration.md)
-
+  * [Understanding ELK: common-notes/understanding-elk.md](cross-cloud-notes/understanding-elk-common-notes-understanding-elk.md.md)
+  * [Understanding Docker and K8S: common-notes/understanding-docker-k8s.md](cross-cloud-notes/understanding-docker-and-k8s-common-notes-understanding-docker-k8s.md.md)
+  * [MicroServices: microservice-blog/about.md](cross-cloud-notes/microservices-microservice-blog-about.md.md)
+  * [Digital Exhaust & Compliance: common-notes/digital-exhaust-compliance.md](cross-cloud-notes/digital-exhaust-and-compliance-common-notes-digital-exhaust-compliance.md.md)
+  * [What is DAPR?: common-notes/dapr.md](cross-cloud-notes/what-is-dapr-common-notes-dapr.md.md)
+  * [REST vs GRPC: common-notes/rest-grpc.md](cross-cloud-notes/rest-vs-grpc-common-notes-rest-grpc.md.md)
+* [Microservices:](microservices/README.md)
+  * [About: microservice-blog/about.md](microservices/about-microservice-blog-about.md.md)
+  * [Microservices "On Hold": microservice-blog/onhold.md](microservices/microservices-on-hold-microservice-blog-onhold.md.md)
+  * [Microservice SKUs: microservice-blog/sku.md](microservices/microservice-skus-microservice-blog-sku.md.md)
+  * [Event and Stateflows: microservice-blog/events-stateflows.md](microservices/event-and-stateflows-microservice-blog-events-stateflows.md.md)
+  * [Service Brokers: microservice-blog/service-brokers.md](microservices/service-brokers-microservice-blog-service-brokers.md.md)
+  * [Microservice Vending Machine: microservice-blog/vending-machine.md](microservices/microservice-vending-machine-microservice-blog-vending-machine.md.md)
+  * [Con-Ed?: microservice-blog/con-ed.md](microservices/con-ed-microservice-blog-con-ed.md.md)
+  * [Utility Infrastructures?: microservice-blog/utility-infrastructure.md](microservices/utility-infrastructures-microservice-blog-utility-infrastructure.md.md)
+  * [The "butler" microservice: microservice-blog/alfred.md](microservices/the-butler-microservice-microservice-blog-alfred.md.md)
+  * [Continuous Delivery: microservice-blog/continuous.md](microservices/continuous-delivery-microservice-blog-continuous.md.md)
+  * [A Point of view: microservice-blog/what-how.md](microservices/a-point-of-view-microservice-blog-what-how.md/README.md)
+    * [Shiny Objects: microservice-blog/shiney-object.md](microservices/a-point-of-view-microservice-blog-what-how.md/shiny-objects-microservice-blog-shiney-object.md.md)
+    * [Its all about events: microservice-blog/events.md](microservices/a-point-of-view-microservice-blog-what-how.md/its-all-about-events-microservice-blog-events.md.md)
+    * [Distribution of Microservices: microservice-blog/distribution.md](microservices/a-point-of-view-microservice-blog-what-how.md/distribution-of-microservices-microservice-blog-distribution.md.md)
+    * [Ramping up - Scaling Microservices: microservice-blog/rampingup.md](microservices/a-point-of-view-microservice-blog-what-how.md/ramping-up-scaling-microservices-microservice-blog-rampingup.md.md)
+    * [All about the Data: microservice-blog/data.md](microservices/a-point-of-view-microservice-blog-what-how.md/all-about-the-data-microservice-blog-data.md.md)
+    * [Legos?: microservice-blog/legos.md](microservices/a-point-of-view-microservice-blog-what-how.md/legos-microservice-blog-legos.md.md)
+    * [Containers: microservice-blog/containers.md](microservices/a-point-of-view-microservice-blog-what-how.md/containers-microservice-blog-containers.md.md)
+    * [Origins: microservice-blog/origins.md](microservices/a-point-of-view-microservice-blog-what-how.md/origins-microservice-blog-origins.md.md)
+    * [Seven Things: microservice-blog/seventhings.md](microservices/a-point-of-view-microservice-blog-what-how.md/seven-things-microservice-blog-seventhings.md.md)
+    * [Fundamentals: microservice-blog/fundamentals.md](microservices/a-point-of-view-microservice-blog-what-how.md/fundamentals-microservice-blog-fundamentals.md.md)
+    * [Forte': microservice-blog/forte.md](microservices/a-point-of-view-microservice-blog-what-how.md/forte-microservice-blog-forte.md.md)
+  * [IT Architecture:](microservices/it-architecture/README.md)
+    * [Purpose: architecture/purpose.md](microservices/it-architecture/purpose-architecture-purpose.md.md)
+    * [4 Key Things: architecture/four-things.md](microservices/it-architecture/4-key-things-architecture-four-things.md.md)
+    * [Getting Your Message Across: architecture/communicating-message.md](microservices/it-architecture/getting-your-message-across-architecture-communicating-message.md.md)
+  * [AWS:](microservices/aws/README.md)
+    * [Purpose: cloud-aws-cloud/Purpose.md](microservices/aws/purpose-cloud-aws-cloud-purpose.md.md)
+    * [Organizations and Accounts: cloud-aws-cloud/understanding-regions-accounts.md](microservices/aws/organizations-and-accounts-cloud-aws-cloud-understanding-regions-accounts.md.md)
+    * [Regional Services View: cloud-aws-cloud/understanding-regions-services.md](microservices/aws/regional-services-view-cloud-aws-cloud-understanding-regions-services.md.md)
+    * [Operations Management: cloud-aws-cloud/ops-mgmt.md](microservices/aws/operations-management-cloud-aws-cloud-ops-mgmt.md.md)
+    * [Security:](microservices/aws/security/README.md)
+      * [IAM: cloud-aws-cloud/security-iam.md](microservices/aws/security/iam-cloud-aws-cloud-security-iam.md.md)
+      * [Assume Role: cloud-aws-cloud/assume-role.md](microservices/aws/security/assume-role-cloud-aws-cloud-assume-role.md.md)
+      * [Controls and Auditing: cloud-aws-cloud/security-services.md](microservices/aws/security/controls-and-auditing-cloud-aws-cloud-security-services.md.md)
+      * [Key Management: cloud-aws-cloud/key-management-services.md](microservices/aws/security/key-management-cloud-aws-cloud-key-management-services.md.md)
+* [Google Cloud:](google-cloud/README.md)
+  * [Purpose: cloud-google-cloud/Purpose.md](google-cloud/purpose-cloud-google-cloud-purpose.md.md)
+  * [Basics:](google-cloud/basics/README.md)
+    * [Fundamentals of GCP: cloud-google-cloud/fundamentals.md](google-cloud/basics/fundamentals-of-gcp-cloud-google-cloud-fundamentals.md.md)
+    * [Google Architecture Framework: cloud-google-cloud/arch-framework.md](google-cloud/basics/google-architecture-framework-cloud-google-cloud-arch-framework.md.md)
+  * [Org, Projects, and IAM:](google-cloud/org-projects-and-iam/README.md)
+    * [Basics: cloud-google-cloud/understanding-regions-accounts.md](google-cloud/org-projects-and-iam/basics-cloud-google-cloud-understanding-regions-accounts.md.md)
+    * [IAM: cloud-google-cloud/iam.md](google-cloud/org-projects-and-iam/iam-cloud-google-cloud-iam.md.md)
+    * [Service and Host Projects: cloud-google-cloud/project-details.md](google-cloud/org-projects-and-iam/service-and-host-projects-cloud-google-cloud-project-details.md.md)
+  * [Data & Analytics:](google-cloud/data-and-analytics/README.md)
+    * [Big Query: cloud-google-cloud/gcp-big-query.md](google-cloud/data-and-analytics/big-query-cloud-google-cloud-gcp-big-query.md.md)
+    * [Data Lakes: cloud-google-cloud/gcp-big-data.md](google-cloud/data-and-analytics/data-lakes-cloud-google-cloud-gcp-big-data.md.md)
+  * [Containers and K8S:](google-cloud/containers-and-k8s/README.md)
+    * [GKE: cloud-google-cloud/kubernetes-engine.md](google-cloud/containers-and-k8s/gke-cloud-google-cloud-kubernetes-engine.md.md)
+  * [Networking:](google-cloud/networking/README.md)
+    * [Overall Subject Area: cloud-google-cloud/network-services.md](google-cloud/networking/overall-subject-area-cloud-google-cloud-network-services.md.md)
+    * [Connectivity: cloud-google-cloud/connectivity.md](google-cloud/networking/connectivity-cloud-google-cloud-connectivity.md.md)
+  * [Compute Engine: cloud-google-cloud/compute-engine.md](google-cloud/compute-engine-cloud-google-cloud-compute-engine.md.md)
+* [MS Azure](ms-azure/README.md)
+  * [Purpose](cloud-microsoft-cloud/Purpose.md)
+  * [Fundamentals](cloud-microsoft-cloud/fundamentals.md)
+  * [Resource Overview](cloud-microsoft-cloud/resource-overview.md)
+* [IBM Cloud:](ibm-cloud/README.md)
+  * [Purpose: cloud-ibm-cloud/Purpose.md](ibm-cloud/purpose-cloud-ibm-cloud-purpose.md.md)
+  * [Regions and Accounts: cloud-ibm-cloud/understanding-regions-accounts.md](ibm-cloud/regions-and-accounts-cloud-ibm-cloud-understanding-regions-accounts.md.md)
+  * [Networking: cloud-ibm-cloud/network-services.md](ibm-cloud/networking-cloud-ibm-cloud-network-services.md.md)
+  * [Security: cloud-ibm-cloud/security-services.md](ibm-cloud/security-cloud-ibm-cloud-security-services.md.md)
+  * [Key Management: cloud-ibm-cloud/key-management-services.md](ibm-cloud/key-management-cloud-ibm-cloud-key-management-services.md.md)
+* [Patterns:](patterns/README.md)
+  * [Event Driven Solutions](patterns/event-driven-1.md)
+  * [MicroServices Integration](patterns/microservice-integration.md)
 * [about](about/README.md)
   * [Contributors](about/Authors.md)
   * [About](about/Purpose.md)
-  * [A short bio... more can be found on LinkedIn.](about/who-am-i.md)
+  *
 * [architecture](architecture/README.md)
   * [What’s wrong with 80 PowerPoints: Getting your message across](architecture/communicating-message.md)
   * [Make sure you can, and like to, do these 4 things…](architecture/four-things.md)
   * [IT Architecture... Applications vs Solutions](architecture/purpose.md)
 * [basics](basics/README.md)
   * [Basics](basics/Purpose.md)
-  * [Summary of Cloud Providers Services](basics/cloud-provider-service-summary.md)
+  *
 * [cloud-aws-cloud](cloud-aws-cloud/README.md)
   * [Purpose](cloud-aws-cloud/Purpose.md)
   * [Understanding Assume Role in AWS](cloud-aws-cloud/assume-role.md)
@@ -186,11 +158,11 @@
   * [Security](cloud-ibm-cloud/security-services.md)
   * [Regions and Accounts](cloud-ibm-cloud/understanding-regions-accounts.md)
 * [cloud-microsoft-cloud](cloud-microsoft-cloud/README.md)
-  * [Purpose of this](cloud-microsoft-cloud/Purpose.md)
-  * [Fundamentals of Azure](cloud-microsoft-cloud/fundamentals.md)
+  *
+  *
   * [Key Management Services](cloud-microsoft-cloud/key-management-services.md)
   * [Network Services](cloud-microsoft-cloud/network-services.md)
-  * [Resource Overviews](cloud-microsoft-cloud/resource-overview.md)
+  *
   * [Security Services](cloud-microsoft-cloud/security-services.md)
   * [Understanding Regions and Accounts](cloud-microsoft-cloud/understanding-regions-accounts.md)
 * [common-networking](common-networking/README.md)
@@ -205,18 +177,18 @@
   * [Notes regarding logging in Kubernetes](common-notes/kubernetes-logging.md)
   * [A Perspective on Microservices](common-notes/microservices.md)
   * [Understanding K8S operators](common-notes/operators.md)
-  * [Purpose of this section](common-notes/purpose.md)
+  *
   * [Understanding Rest vs GRPC](common-notes/rest-grpc.md)
   * [Notes relative to understanding VPNs and Configuration](common-notes/understanding-VPNs.md)
   * [How is Akamai config structured?](common-notes/understanding-dns-akamai.md)
   * [Looking into Docker and k8s](common-notes/understanding-docker-k8s.md)
   * [Understanding Elastic, Logstash, and Kibana](common-notes/understanding-elk.md)
   * [Understanding Requests and Limits in K8S](common-notes/understanding-k8s-requests-limits.md)
-  * [A Perspective on the various aspects of an comprehensive analytical solution](common-notes/view-of-analytics.md)
+  *
 * [common-security](common-security/README.md)
   * [Purpose of this](common-security/Purpose.md)
   * [Understanding the basics of Cloud IAM](common-security/cloud-iam.md)
-  * [Threat Model](common-security/threat-models.md)
+  *
 * [microservice-blog](microservice-blog/README.md)
   * [Microservices: Yesterday, Today, Tomorrow](microservice-blog/about.md)
   * [“Alfred are you there?” :The Butler Microservice](microservice-blog/alfred.md)
@@ -240,9 +212,7 @@
   * [Microservices: What’s the utility infrastructure look like?](microservice-blog/utility-infrastructure.md)
   * [A Microservices Vending Machine](microservice-blog/vending-machine.md)
   * [A Microservice: what, how, where.... a Point of View](microservice-blog/what-how.md)
-* [patterns](patterns/README.md)
-  
+* [patterns](<patterns/README (1).md>)
 * [images](images/README.md)
   * [blog](images/blog/README.md)
     * [placeholder](images/blog/placeholder.md)
-
