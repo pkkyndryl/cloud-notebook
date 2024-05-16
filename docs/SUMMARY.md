@@ -1,9 +1,122 @@
 # Table of contents
 
-* [Welcome to "Cloud Notebook"](README.md)
-* [Page1](page1.md)
-* [Summary](Summary.md)
-* [Welcome to "Cloud Notebook"](index.md)
+* [Home](README.md)
+
+* [About](about/who-am-i.md)
+* [Looking across clouds](basics/cloud-provider-service-summary.md)
+* Cross Cloud Notes
+  * [Purpose](common-notes/purpose.md)
+  * [Security Control Model](common-security/threat-models.md)
+  * Understanding Kafka:  common-notes/kafka.md
+  * Understanding K8S request & limits: common-notes/understanding-k8s-requests-limits.md
+  * Crossplane IAC: common-notes/crossplane-IaC.md
+  * Logging in K8S: common-notes/kubernetes-logging.md
+  * Operators: common-notes/operators.md
+  * K8S how it works: common-notes/how-k8s-works.md
+  * Understanding VPNs: common-notes/understanding-VPNs.md
+  * Understanding Akamai: common-notes/understanding-dns-akamai.md
+  * [A perspective on Analytics](common-notes/view-of-analytics.md)
+  * Understanding ELK: common-notes/understanding-elk.md
+  * Understanding Docker and K8S: common-notes/understanding-docker-k8s.md
+  * MicroServices: microservice-blog/about.md
+  * Digital Exhaust & Compliance: common-notes/digital-exhaust-compliance.md
+  * What is DAPR?: common-notes/dapr.md
+  * REST vs GRPC: common-notes/rest-grpc.md
+* Microservices:
+  * About:  microservice-blog/about.md
+  * Microservices "On Hold": microservice-blog/onhold.md
+  * Microservice SKUs: microservice-blog/sku.md
+  * Event and Stateflows:  microservice-blog/events-stateflows.md
+  * Service Brokers: microservice-blog/service-brokers.md
+  * Microservice Vending Machine:  microservice-blog/vending-machine.md
+  * Con-Ed?: microservice-blog/con-ed.md
+  * Utility Infrastructures?: microservice-blog/utility-infrastructure.md
+  * The "butler" microservice: microservice-blog/alfred.md
+  * Continuous Delivery: microservice-blog/continuous.md
+  * A Point of view:  microservice-blog/what-how.md
+      - Shiny Objects:  microservice-blog/shiney-object.md
+      - Its all about events:  microservice-blog/events.md
+      - Distribution of Microservices: microservice-blog/distribution.md
+      - Ramping up - Scaling Microservices: microservice-blog/rampingup.md
+      - All about the Data: microservice-blog/data.md
+      - Legos?:  microservice-blog/legos.md
+      - Containers: microservice-blog/containers.md
+      - Origins: microservice-blog/origins.md
+      - Seven Things: microservice-blog/seventhings.md
+      - Fundamentals: microservice-blog/fundamentals.md
+      - Forte':  microservice-blog/forte.md
+  - IT Architecture:
+      - Purpose: architecture/purpose.md
+      - 4 Key Things: architecture/four-things.md
+      - Getting Your Message Across: architecture/communicating-message.md
+  - AWS:
+      - Purpose: cloud-aws-cloud/Purpose.md
+      - Organizations and Accounts: cloud-aws-cloud/understanding-regions-accounts.md
+      - Regional Services View: cloud-aws-cloud/understanding-regions-services.md
+      - Operations Management: cloud-aws-cloud/ops-mgmt.md
+      - Security:
+          - IAM: cloud-aws-cloud/security-iam.md
+          - Assume Role: cloud-aws-cloud/assume-role.md
+          - Controls and Auditing: cloud-aws-cloud/security-services.md
+          - Key Management: cloud-aws-cloud/key-management-services.md
+#          - Params and Secrets:  cloud-aws-cloud/params-secrets.md
+      - Compute and Storage:
+          - EC2 & AutoScaling: cloud-aws-cloud/ec2.md
+          - Spot Instances: cloud-aws-cloud/ec2-spot.md
+          - Placement Groups: cloud-aws-cloud/ec2-placement.md
+          - EBS and EFS: cloud-aws-cloud/storage-ebs-efs.md
+          - Storage Gateway: cloud-aws-cloud/storage-gateway.md
+          - S3:  cloud-aws-cloud/s3.md
+          - Containers & K8S: cloud-aws-cloud/containers.md
+      - Networking:
+          - VPC Overview: cloud-aws-cloud/network-services.md
+          - VPC Connectivity: cloud-aws-cloud/connectivity-services.md
+          - DNS, ENI, etc...: cloud-aws-cloud/connectivity-etc.md
+          - CloudFront & Global Accelerator: cloud-aws-cloud/network-cloudfront.md
+      - Data and Analytics:
+          - Integration via Qs & Streams:  cloud-aws-cloud/integation.md
+          - Databases: cloud-aws-cloud/databases.md
+          - Caching: cloud-aws-cloud/elasticache.md
+          - Data Replication, Backup, Sync: cloud-aws-cloud/data-replication.md
+          - Data Integration: cloud-aws-cloud/data-integration.md
+          - Data-Lakes: cloud-aws-cloud/data-lakes.md
+      - Other:
+          - Events: cloud-aws-cloud/event-bridge.md
+          - Serverless: cloud-aws-cloud/serverless.md
+          - CloudWatch: cloud-aws-cloud/cloudwatch.md
+  - Google Cloud:
+      - Purpose: cloud-google-cloud/Purpose.md
+      - Basics:
+          - Fundamentals of GCP: cloud-google-cloud/fundamentals.md
+          - Google Architecture Framework: cloud-google-cloud/arch-framework.md
+      - Org, Projects, and IAM:
+          - Basics: cloud-google-cloud/understanding-regions-accounts.md
+          - IAM: cloud-google-cloud/iam.md
+          - Service and Host Projects: cloud-google-cloud/project-details.md
+      - Data & Analytics:
+          - Big Query: cloud-google-cloud/gcp-big-query.md
+          - Data Lakes: cloud-google-cloud/gcp-big-data.md
+      - Containers and K8S:
+          - GKE: cloud-google-cloud/kubernetes-engine.md
+      - Networking:
+          - Overall Subject Area: cloud-google-cloud/network-services.md
+          - Connectivity:  cloud-google-cloud/connectivity.md
+      - Compute Engine:  cloud-google-cloud/compute-engine.md
+  * MS Azure
+      * [Purpose](cloud-microsoft-cloud/Purpose.md)
+      * [Fundamentals](cloud-microsoft-cloud/fundamentals.md)
+      * [Resource Overview](cloud-microsoft-cloud/resource-overview.md)
+  - IBM Cloud:
+      - Purpose: cloud-ibm-cloud/Purpose.md
+      - Regions and Accounts: cloud-ibm-cloud/understanding-regions-accounts.md
+      - Networking: cloud-ibm-cloud/network-services.md
+      - Security: cloud-ibm-cloud/security-services.md
+      - Key Management: cloud-ibm-cloud/key-management-services.md
+
+  * Patterns:
+      * [Event Driven Solutions](patterns/event-driven-1.md)
+      * [MicroServices Integration](patterns/microservice-integration.md)
+
 * [about](about/README.md)
   * [Contributors](about/Authors.md)
   * [About](about/Purpose.md)
@@ -128,122 +241,8 @@
   * [A Microservices Vending Machine](microservice-blog/vending-machine.md)
   * [A Microservice: what, how, where.... a Point of View](microservice-blog/what-how.md)
 * [patterns](patterns/README.md)
-  * [An view of event driven solutions](patterns/event-driven-1.md)
-  * [A view of options for integrating MicroServices](patterns/microservice-integration.md)
+  
 * [images](images/README.md)
   * [blog](images/blog/README.md)
     * [placeholder](images/blog/placeholder.md)
-* [About](about/who-am-i.md)
-  * [Looking across clouds](basics/cloud-provider-service-summary.md)
-  * [Cross Cloud Notes]
-      * [Purpose](common-notes/purpose.md)
-      * Security Control Model: common-security/threat-models.md
-      - Understanding Kafka:  common-notes/kafka.md
-      - Understanding K8S request & limits: common-notes/understanding-k8s-requests-limits.md
-      - Crossplane IAC: common-notes/crossplane-IaC.md
-      - Logging in K8S: common-notes/kubernetes-logging.md
-      - Operators: common-notes/operators.md
-      - K8S how it works: common-notes/how-k8s-works.md
-      - Understanding VPNs: common-notes/understanding-VPNs.md
-      - Understanding Akamai: common-notes/understanding-dns-akamai.md
-      - A perspective on Analytics: common-notes/view-of-analytics.md
-      - Understanding ELK: common-notes/understanding-elk.md
-      - Understanding Docker and K8S: common-notes/understanding-docker-k8s.md
-      - MicroServices: microservice-blog/about.md
-      - Digital Exhaust & Compliance: common-notes/digital-exhaust-compliance.md
-      - What is DAPR?: common-notes/dapr.md
-      - REST vs GRPC: common-notes/rest-grpc.md
-  - Microservices:
-      - About:  microservice-blog/about.md
-      - Microservices "On Hold": microservice-blog/onhold.md
-      - Microservice SKUs: microservice-blog/sku.md
-      - Event and Stateflows:  microservice-blog/events-stateflows.md
-      - Service Brokers: microservice-blog/service-brokers.md
-      - Microservice Vending Machine:  microservice-blog/vending-machine.md
-      - Con-Ed?: microservice-blog/con-ed.md
-      - Utility Infrastructures?: microservice-blog/utility-infrastructure.md
-      - The "butler" microservice: microservice-blog/alfred.md
-      - Continuous Delivery: microservice-blog/continuous.md
-      - A Point of view:  microservice-blog/what-how.md
-      - Shiny Objects:  microservice-blog/shiney-object.md
-      - Its all about events:  microservice-blog/events.md
-      - Distribution of Microservices: microservice-blog/distribution.md
-      - Ramping up - Scaling Microservices: microservice-blog/rampingup.md
-      - All about the Data: microservice-blog/data.md
-      - Legos?:  microservice-blog/legos.md
-      - Containers: microservice-blog/containers.md
-      - Origins: microservice-blog/origins.md
-      - Seven Things: microservice-blog/seventhings.md
-      - Fundamentals: microservice-blog/fundamentals.md
-      - Forte':  microservice-blog/forte.md
-  - IT Architecture:
-      - Purpose: architecture/purpose.md
-      - 4 Key Things: architecture/four-things.md
-      - Getting Your Message Across: architecture/communicating-message.md
-  - AWS:
-      - Purpose: cloud-aws-cloud/Purpose.md
-      - Organizations and Accounts: cloud-aws-cloud/understanding-regions-accounts.md
-      - Regional Services View: cloud-aws-cloud/understanding-regions-services.md
-      - Operations Management: cloud-aws-cloud/ops-mgmt.md
-      - Security:
-          - IAM: cloud-aws-cloud/security-iam.md
-          - Assume Role: cloud-aws-cloud/assume-role.md
-          - Controls and Auditing: cloud-aws-cloud/security-services.md
-          - Key Management: cloud-aws-cloud/key-management-services.md
-#          - Params and Secrets:  cloud-aws-cloud/params-secrets.md
-      - Compute and Storage:
-          - EC2 & AutoScaling: cloud-aws-cloud/ec2.md
-          - Spot Instances: cloud-aws-cloud/ec2-spot.md
-          - Placement Groups: cloud-aws-cloud/ec2-placement.md
-          - EBS and EFS: cloud-aws-cloud/storage-ebs-efs.md
-          - Storage Gateway: cloud-aws-cloud/storage-gateway.md
-          - S3:  cloud-aws-cloud/s3.md
-          - Containers & K8S: cloud-aws-cloud/containers.md
-      - Networking:
-          - VPC Overview: cloud-aws-cloud/network-services.md
-          - VPC Connectivity: cloud-aws-cloud/connectivity-services.md
-          - DNS, ENI, etc...: cloud-aws-cloud/connectivity-etc.md
-          - CloudFront & Global Accelerator: cloud-aws-cloud/network-cloudfront.md
-      - Data and Analytics:
-          - Integration via Qs & Streams:  cloud-aws-cloud/integation.md
-          - Databases: cloud-aws-cloud/databases.md
-          - Caching: cloud-aws-cloud/elasticache.md
-          - Data Replication, Backup, Sync: cloud-aws-cloud/data-replication.md
-          - Data Integration: cloud-aws-cloud/data-integration.md
-          - Data-Lakes: cloud-aws-cloud/data-lakes.md
-      - Other:
-          - Events: cloud-aws-cloud/event-bridge.md
-          - Serverless: cloud-aws-cloud/serverless.md
-          - CloudWatch: cloud-aws-cloud/cloudwatch.md
-  - Google Cloud:
-      - Purpose: cloud-google-cloud/Purpose.md
-      - Basics:
-          - Fundamentals of GCP: cloud-google-cloud/fundamentals.md
-          - Google Architecture Framework: cloud-google-cloud/arch-framework.md
-      - Org, Projects, and IAM:
-          - Basics: cloud-google-cloud/understanding-regions-accounts.md
-          - IAM: cloud-google-cloud/iam.md
-          - Service and Host Projects: cloud-google-cloud/project-details.md
-      - Data & Analytics:
-          - Big Query: cloud-google-cloud/gcp-big-query.md
-          - Data Lakes: cloud-google-cloud/gcp-big-data.md
-      - Containers and K8S:
-          - GKE: cloud-google-cloud/kubernetes-engine.md
-      - Networking:
-          - Overall Subject Area: cloud-google-cloud/network-services.md
-          - Connectivity:  cloud-google-cloud/connectivity.md
-      - Compute Engine:  cloud-google-cloud/compute-engine.md
-  * MS Azure
-      * [Purpose](cloud-microsoft-cloud/Purpose.md)
-      * [Fundamentals](cloud-microsoft-cloud/fundamentals.md)
-      * [Resource Overview](cloud-microsoft-cloud/resource-overview.md)
-  - IBM Cloud:
-      - Purpose: cloud-ibm-cloud/Purpose.md
-      - Regions and Accounts: cloud-ibm-cloud/understanding-regions-accounts.md
-      - Networking: cloud-ibm-cloud/network-services.md
-      - Security: cloud-ibm-cloud/security-services.md
-      - Key Management: cloud-ibm-cloud/key-management-services.md
 
-  - Patterns:
-      - Event Driven Solutions: patterns/event-driven-1.md
-      - Microservice Integration: patterns/microservice-integration.md
